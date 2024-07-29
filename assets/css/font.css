@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'SF Pro Display';
+    font-weight: bold;
+    src: url('../fonts/sf-pro-display_bold.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'SF Pro Display';
+    font-weight: 500;
+    src: url('../fonts/sf-pro-display_medium.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'SF Pro Display';
+    font-weight: normal;
+    src: url('../fonts/sf-pro-display_regular.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'SF Pro Display';
+    font-weight: 600;
+    src: url('../fonts/sf-pro-display_semibold.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'SF Pro Display';
+    font-weight: 600;
+    font-style: italic;
+    src: url('../fonts/sf-pro-display_semibold-italic.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'SF Pro Icons';
+    font-weight: 300;
+    src: url('../fonts/sf-pro-icons_light.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'SF Pro Icons';
+    font-weight: normal;
+    src: url('../fonts/sf-pro-icons_regular.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'SF Pro Icons';
+    font-weight: 600;
+    src: url('../fonts/sf-pro-icons_semibold.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'SF Pro Text';
+    font-weight: normal;
+    src: url('../fonts/sf-pro-text_regular.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 600;
+    src: url('../fonts/sf-pro-text_semibold.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 300;
+    src: url('../fonts/sf-pro-text_light.woff2') format('woff2');
+  }

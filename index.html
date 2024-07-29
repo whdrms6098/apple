@@ -1,0 +1,1588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apple</title>
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./assets/js/main.js" defer></script>
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="header-top">
+            <div class="inner">
+                <nav class="gnb">
+                    <ul class="gnb-list">
+                        <li class="gnb-item logo">
+                            <a href="#">
+                                <svg height="44" viewBox="0 0 14 44" width="14" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394 8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187 0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984 2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579 3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32 3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19 1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="gnb-item">
+                            <a href="#">
+                                Store
+                            </a>
+                        </li>
+                        <li class="gnb-item">
+                            <a href="#">
+                                Mac
+                            </a>
+                        </li>
+                        <li class="gnb-item">
+                            <a href="#">
+                                iPad
+                            </a>
+                        </li>
+                        <li class="gnb-item">
+                            <a href="#">
+                                iPhone
+                            </a>
+                        </li>
+                        <li class="gnb-item">
+                            <a href="#">
+                                Watch
+                            </a>
+                        </li>
+                        <li class="gnb-item">
+                            <a href="#">
+                                Vision
+                            </a>
+                        </li>
+                        <li class="gnb-item">
+                            <a href="#">
+                                AirPods
+                            </a>
+                        </li>
+                        <li class="gnb-item">
+                            <a href="#">
+                                TV & Home
+                            </a>
+                        </li>
+                        <li class="gnb-item">
+                            <a href="#">
+                                Entertainment
+                            </a>
+                        </li>
+                        <li class="gnb-item">
+                            <a href="#">
+                                Accessories
+                            </a>
+                        </li>
+                        <li class="gnb-item">
+                            <a href="#">
+                                Support
+                            </a>
+                        </li>
+                        <li class="gnb-item search">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="44px" viewBox="0 0 15 44">
+                                    <path
+                                        d="M14.298,27.202l-3.87-3.87c0.701-0.929,1.122-2.081,1.122-3.332c0-3.06-2.489-5.55-5.55-5.55c-3.06,0-5.55,2.49-5.55,5.55 c0,3.061,2.49,5.55,5.55,5.55c1.251,0,2.403-0.421,3.332-1.122l3.87,3.87c0.151,0.151,0.35,0.228,0.548,0.228 s0.396-0.076,0.548-0.228C14.601,27.995,14.601,27.505,14.298,27.202z M1.55,20c0-2.454,1.997-4.45,4.45-4.45 c2.454,0,4.45,1.997,4.45,4.45S8.454,24.45,6,24.45C3.546,24.45,1.55,22.454,1.55,20z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="gnb-item basket">
+                            <a href="#">
+                                <svg height="44" viewBox="0 0 14 44" width="14" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="m11.3535 16.0283h-1.0205a3.4229 3.4229 0 0 0 -3.333-2.9648 3.4229 3.4229 0 0 0 -3.333 2.9648h-1.02a2.1184 2.1184 0 0 0 -2.117 2.1162v7.7155a2.1186 2.1186 0 0 0 2.1162 2.1167h8.707a2.1186 2.1186 0 0 0 2.1168-2.1167v-7.7155a2.1184 2.1184 0 0 0 -2.1165-2.1162zm-4.3535-1.8652a2.3169 2.3169 0 0 1 2.2222 1.8652h-4.4444a2.3169 2.3169 0 0 1 2.2222-1.8652zm5.37 11.6969a1.0182 1.0182 0 0 1 -1.0166 1.0171h-8.7069a1.0182 1.0182 0 0 1 -1.0165-1.0171v-7.7155a1.0178 1.0178 0 0 1 1.0166-1.0166h8.707a1.0178 1.0178 0 0 1 1.0164 1.0166z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="gnb-item menu">
+                            <button class="menu-open">
+                                <svg width="18" height="18" viewBox="0 0 18 18">
+                                    <polyline id="globalnav-menutrigger-bread-bottom" fill="none" stroke="currentColor"
+                                        stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"
+                                        points="2 12, 16 12"
+                                        class="globalnav-menutrigger-bread globalnav-menutrigger-bread-bottom">
+                                        <animate id="globalnav-anim-menutrigger-bread-bottom-open"
+                                            attributeName="points" keyTimes="0;0.5;1" dur="0.24s" begin="indefinite"
+                                            fill="freeze" calcMode="spline" keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1"
+                                            values=" 2 12, 16 12; 2 9, 16 9; 3.5 15, 15 3.5"></animate>
+                                        <animate id="globalnav-anim-menutrigger-bread-bottom-close"
+                                            attributeName="points" keyTimes="0;0.5;1" dur="0.24s" begin="indefinite"
+                                            fill="freeze" calcMode="spline" keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1"
+                                            values=" 3.5 15, 15 3.5; 2 9, 16 9; 2 12, 16 12"></animate>
+                                    </polyline>
+                                    <polyline id="globalnav-menutrigger-bread-top" fill="none" stroke="currentColor"
+                                        stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"
+                                        points="2 5, 16 5"
+                                        class="globalnav-menutrigger-bread globalnav-menutrigger-bread-top">
+                                        <animate id="globalnav-anim-menutrigger-bread-top-open" attributeName="points"
+                                            keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze"
+                                            calcMode="spline" keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1"
+                                            values=" 2 5, 16 5; 2 9, 16 9; 3.5 3.5, 15 15"></animate>
+                                        <animate id="globalnav-anim-menutrigger-bread-top-close" attributeName="points"
+                                            keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze"
+                                            calcMode="spline" keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1"
+                                            values=" 3.5 3.5, 15 15; 2 9, 16 9; 2 5, 16 5"></animate>
+                                    </polyline>
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <nav class="lng">
+        <div class="inner">
+            <a href="#" class="title">
+                AirPods Pro <br> (2nd generation)
+            </a>
+
+            <div class="lng-wrap">
+                <ul class="lng-list">
+                    <li class="active">Overview</li>
+                    <li><a href="#">Tech Specs</a></li>
+                    <li><a href="#">Compare</a></li>
+                </ul>
+                <button class="btn-list">
+                    <svg viewBox="0 0 16 9" data-chevron-icon="" xmlns="http://www.w3.org/2000/svg">
+                        <polyline shape-rendering="geometricPrecision" data-chevron-icon-shape="" stroke="currentColor" stroke-linecap="round" vector-effect="non-scaling-stroke" stroke-linejoin="round" fill="none" fill-rule="evenodd" points="15.265 .835 8 8.167 .735 .835">
+                            <animate data-chevron-animate="expand" attributeName="points" values="15.265 .835 8 8.167 .735 .835;
+                                        15.25 4.5 8 4.5 .75 4.5;
+                                        15.265 8.165 8 .835 .735 8.165" dur="320ms" begin="indefinite" fill="freeze" keyTimes="0;
+                                        0.5;
+                                        1" calcMode="spline" keySplines="0.12, 0, 0.38, 0;
+                                            0.2, 1, 0.68, 1"></animate>
+                            <animate data-chevron-animate="collapse" attributeName="points" values="15.265 8.165 8 .835 .735 8.165;
+                                        15.25 4.5 8 4.5 .75 4.5;
+                                        15.265 .835 8 8.167 .735 .835" dur="320ms" begin="indefinite" fill="freeze" keyTimes="0;
+                                        0.5;
+                                        1" calcMode="spline" keySplines="0.2, 0, 0.68, 0;
+                                            0.2, 1, 0.68, 1"></animate>
+                        </polyline>
+                    </svg>
+                    <span class="blind">메뉴</span>
+                </button>
+                <a href="#" class="btn-blue">Buy</a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="container">
+        <section class="sc-intro">
+            <div class="sticky">
+                <div class="title-area">
+                    <h1 class="font-headline">AirPods Pro</h1>
+                </div>
+
+                <div class="btn-area">
+                    <a href="#" class="font-small icon-playcircle">
+                        Watch <span>Quiet the</span> noise
+                    </a>
+
+                    <a href="#" class="font-small icon icon-after icon-playcircle">
+                        Watch the film
+                    </a>
+                </div>
+
+                <div class="sequence-area"></div>
+
+                <div class="sub-title-area" data-effect="fade" data-size="scale">
+                    <p>
+                        <span>Adaptive Audio.</span>
+                        <span>Now playing.</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="sc-visual">
+            <h2 class="blind">에어팟 소개</h2>
+            <div class="sticky">
+                <div class="video-area">
+                    <video src="./assets/video/visual.mp4" autoplay muted loop></video>
+                </div>
+            </div>
+            <div class="text-area">
+                <p class="font-medium">
+                    <span class="font-wrap font1">Up to 2x more Active Noise Cancellation.</span>
+                    <span class="font-wrap font2">Transparency mode to hear the world around you.</span>
+                    <span class="font-wrap font3">All-new Adaptive Audio intelligently tailors noise control to your
+                        environment.</span>
+                    <span class="font-wrap font4">Spatial Audio takes immersion to a remarkably personal level.</span>
+                    <span class="font-wrap font5">And a single charge delivers 6 hours of battery life.</span>
+                </p>
+            </div>
+        </section>
+
+        <section class="sc-audio">
+            <div class="group-chip">
+                <div class="title-area">
+                    <h2 class="font-m-small">Audio performance</h2>
+                    <strong class="font-large">
+                        H2. More <br>
+                        immersive by <br>
+                        every measure.
+                    </strong>
+
+                    <p class="font-m-small">
+                        The Apple-designed H2 chip is the force behind the advanced audio performance of AirPods Pro,
+                        working with the driver and amplifier to create crisp, high-definition sound. It uses
+                        computational
+                        algorithms to deliver noise cancellation, superior three-dimensional sound, and efficient
+                        battery
+                        life — all at once.
+                    </p>
+                </div>
+
+                <div class="chip-area">
+                    <div class="col-left">
+                        <video class="chip-video" src="./assets/video/chip.mp4" muted></video>
+                    </div>
+
+                    <div class="col-right">
+                        <p>
+                            AirPods Pro pairs with Apple Vision Pro to deliver <em>Lossless Audio with ultra-low
+                                latency</em>, for an
+                            unprecedented sound experience.1 Both feature the <em>H2 chip</em>, communicating at
+                            industry-shattering
+                            speed and unlocking a revolutionary new format rendering pure, uncompressed sound in real
+                            time.
+                            So your movies, shows, and games become breathtakingly immersive.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group-xray">
+                <div class="sticky-wrap">
+                    <div class="sticky">
+                        <div class="img-area">
+                            <img src="./assets/images/xray1.jpg" alt class="xray1">
+                            <img src="./assets/images/xray2.jpg" alt class="xray2" data-effect="fade">
+
+                            <div class="text-wrap">
+                                <div class="desc1" data-effect="fade">
+                                    <p class="font-small">The chip uses powerful <em>adaptation algorithms</em> to
+                                        process
+                                        sound more quickly,
+                                        tuning audio
+                                        at the precise moment you hear it. Every detail is rendered for your specific
+                                        ear
+                                        shape,
+                                        immersing you in <span class="point-green">higher‑fidelity sound.</span>
+                                    </p>
+                                </div>
+
+                                <div class="desc2" data-effect="fade">
+                                    <p class="font-small"><em>An inward-facing microphone</em> works with voice
+                                        enhancement algorithms to recognize and articulate your voice, so your phone and
+                                        video calls always
+                                        <span class="point-green"> sound completely natural.
+                                        </span>
+                                    </p>
+                                </div>
+
+                                <div class="desc3" data-effect="fade">
+                                    <p class="font-small"><em>A custom-built driver and amplifier</em> work with the H2
+                                        chip to
+                                        provide lower distortion
+                                        during playback, so you’ll hear <span class="point-green">deeper bass and
+                                            crisper highs</span>
+                                        — across all volume levels.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="video-area">
+                            <div class="video">
+                                <video src="./assets/video/xray.mp4" autoplay muted loop></video>
+                            </div>
+
+                            <div class="img">
+                                <img src="./assets/images/xray3.jpg" alt class="xray3">
+                            </div>
+
+                            <button class="btn-play">
+                                <i class="ico-play"></i>
+                                <i class="ico-pause"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sc-noise">
+            <div class="group-title">
+                <h2 class="font-small">Intelligent noise control</h2>
+                <strong class="font-large">Unheard-of sound.
+                    On every level.</strong>
+                <p class="font-m-small">The H2-powered AirPods Pro feature Adaptive Audio,2 automatically prioritizing
+                    sounds that need your
+                    attention as you move through the world. By seamlessly blending Active Noise Cancellation with
+                    Transparency mode when you need it, Adaptive Audio magically delivers the right mix of sound for any
+                    environment.</p>
+            </div>
+
+            <div class="group-info">
+                <div class="info-item">
+                    <img src="./assets/images/noise.jpg" alt class="bg">
+                    <p class="font-small center flex">
+                        <span>Up to</span>
+                        <em class="font-large point-green">2x</em>
+                        <span>more Active Noise</span>
+                        <span>Cancellation.</span>
+                    </p>
+                </div>
+
+                <div class="info-item">
+                    <p class="font-gray">
+                        A driver and acoustic algorithms help <em class="point-white">Active Noise Cancellation</em>
+                        reduce more unwanted
+                        noise. With
+                        control over what you hear — and don’t hear — you can immerse yourself in music and podcasts, or
+                        simply stay focused, like never before.
+                    </p>
+                </div>
+
+                <div class="info-item g-row start line">
+                    <div class="img-wrap">
+                        <img src="./assets/images/noise-airpod.jpg" alt="Airpods">
+                    </div>
+                    <p class="font-small font-gray pin">
+                        <em class="point-white">Noise-cancelling microphones</em> and a rear vent are optimally placed
+                        to quickly detect
+                        sound coming
+                        in, working together to counter noise before it reaches your ear.
+                        <span class="pin">
+                            <span data-move="y-move"></span>
+                        </span>
+                    </p>
+                </div>
+
+                <div class="info-item g-colum tips large">
+                    <div class="title-box">
+                        <p class="font-small font-gray">
+                            <em class="point-white">Four pairs of silicone tips</em> are included to fit a wide range of
+                            ears. The tips secure AirPods
+                            Pro in place and create an <span class="point-green">acoustic seal</span> that closes in the
+                            sound.
+                        </p>
+                    </div>
+
+                    <div class="img-box">
+                        <div class="tips-list">
+                            <div class="tips1">
+                                <img src="./assets/images/tips1.jpg" alt>
+                            </div>
+                            <div class="tips2" data-effect="fade">
+                                <img src="./assets/images/tips2.jpg" alt>
+                                <span class="point-green">L</span>
+                            </div>
+                            <div class="tips3" data-effect="fade">
+                                <img src="./assets/images/tips3.jpg" alt>
+                                <span class="point-green">M</span>
+                            </div>
+                            <div class="tips4" data-effect="fade">
+                                <img src="./assets/images/tips4.jpg" alt>
+                                <span class="point-green">S</span>
+                            </div>
+                            <div class="tips5" data-effect="fade">
+                                <img src="./assets/images/tips5.jpg" alt>
+                                <span class="point-green">XS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-item large">
+                    <p class="font-gray">
+                        <em class="point-white">Transparency mode</em> harnesses the power of H2 to minimize the
+                        intensity of loud noises like sirens
+                        or power tools — so you can comfortably hear the world around you.
+                    </p>
+                </div>
+
+                <div class="info-item large">
+                    <p class="font-small center flex">
+                        <span class="point-green">Reduces noise at </span>
+                        <em class="font-large">48<span class="font-m-small">,</span>000</em>
+                        times per second.
+                    </p>
+                </div>
+
+                <div class="info-item g-row flex">
+                    <span class="font-small point-green">Coming this fall</span>
+                    <p class="font-gray">
+                        <em class="point-white">Voice Isolation</em> improves the quality of your phone calls in loud or
+                        windy conditions. Using
+                        advanced computational audio, it reduces background noise while isolating and clarifying the
+                        sound of your voice for the person you’re speaking to.
+                    </p>
+                </div>
+
+                <div class="info-item">
+                    <p class="font-gray">
+                        <em class="point-white">Personalized Volume2</em> uses machine learning to understand your
+                        listening preferences in different
+                        environments, and automatically adapts sound based on your patterns over time.
+                    </p>
+                </div>
+
+                <div class="info-item">
+                    <p class="font-gray">
+                        When you’re speaking with someone nearby, <em class="point-white">Conversation Awareness2</em>
+                        automatically lowers the
+                        volume of what’s playing, enhances the voices in front of you, and quiets ambient sounds.
+                    </p>
+                </div>
+
+                <div class="info-item flex large large-padding">
+                    <div class="hands-img">
+                        <img src="./assets/images/noise-ico.png" alt>
+                    </div>
+
+                    <div class="text-box">
+                        <span class="font-small point-green">Coming this fall</span>
+                        <strong class="font-s-medium">A new hands‑free <br>
+                            Siri experience.</strong>
+                        <p class="font-gray font-small">With <em class="point-white">Siri Interactions</em>, soon you’ll
+                            be
+                            able to simply nod your head yes or gently shake your head
+                            no when Siri asks if you’d like to answer an incoming call, hear a text message or
+                            notification,
+                            manage timers and alarms, or start a workout. So it’s easier than ever to interact with Siri
+                            —
+                            even when you have your hands full or don’t want to speak out loud.</p>
+                    </div>
+                </div>
+
+                <div class="info-item flex large large-padding">
+                    <div class="touch-img">
+                        <img src="./assets/images/noise-touch.jpg" alt>
+                    </div>
+                    <div class="text-box touch">
+                        <strong class="font-s-medium">Just touch <br>
+                            to adjust.</strong>
+                        <p class="font-gray font-small"><em class="point-white">Touch control</em> lets you manage
+                            playback functions from the stem.
+                            Swipe up or down to adjust
+                            volume, press to play and pause music or mute and unmute yourself on calls, and press twice
+                            to end a call. You can also hold the stem to switch between listening modes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sc-sound">
+            <div class="group-title">
+                <h2 class="font-m-small">Personalized listening</h2>
+                <strong class="font-large">
+                    Sound. <br>
+                    Tuned to you.
+                </strong>
+
+                <p class="font-m-small">
+                    AirPods Pro take the listening experience to a new level of individuality. Personalized Spatial
+                    Audio with dynamic head tracking works with all your devices to immerse you deeper in all-around-you
+                    sound when you’re listening to music, watching a movie, or gaming.4 And Adaptive EQ accounts for the
+                    fit of AirPods Pro, so you hear every frequency just as it was intended.
+                </p>
+            </div>
+
+            <div class="group-dancer">
+                <div class="sticky">
+                    <div class="video-area">
+                        <video src="./assets/video/sound.mp4" muted class="dancer-video"></video>
+                    </div>
+                </div>
+                <div class="text-area">
+                    <div class="desc1" data-effect="fade">
+                        <p class="font-small">
+                            To play sound that better suits your unique ear shape, <span
+                                class="point-green">Personalized Spatial Audio</span> works
+                            with the TrueDepth camera on your iPhone to create a custom profile based on your head’s
+                            geometry. The profile syncs across your devices — delivering phenomenal sound every way
+                            you listen.5
+                        </p>
+                    </div>
+
+                    <div class="desc2" data-effect="fade">
+                        <p class="font-small">
+                            To play sound that better suits your unique ear shape, <span
+                                class="point-green">Personalized Spatial Audio</span> works
+                            with the TrueDepth camera on your iPhone to create a custom profile based on your head’s
+                            geometry. The profile syncs across your devices — delivering phenomenal sound every way
+                            you listen.5
+                        </p>
+                    </div>
+
+                    <div class="desc3" data-effect="fade">
+                        <p class="font-small">
+                            To play sound that better suits your unique ear shape, <span
+                                class="point-green">Personalized Spatial Audio</span> works
+                            with the TrueDepth camera on your iPhone to create a custom profile based on your head’s
+                            geometry. The profile syncs across your devices — delivering phenomenal sound every way
+                            you listen.5
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sc-battery">
+            <div class="group-title">
+                <h2 class="font-m-small">Personalized listening</h2>
+                <strong class="font-large">
+                    Sound. <br>
+                    Tuned to you.
+                </strong>
+
+                <p class="font-m-small">
+                    AirPods Pro take the listening experience to a new level of individuality. Personalized Spatial
+                    Audio with dynamic head tracking works with all your devices to immerse you deeper in all-around-you
+                    sound when you’re listening to music, watching a movie, or gaming.4 And Adaptive EQ accounts for the
+                    fit of AirPods Pro, so you hear every frequency just as it was intended.
+                </p>
+            </div>
+
+            <div class="group-info">
+                <div class="desc-area">
+                    <div class="desc">
+                        <p class="font-small">
+                            <span>up to</span>
+                            <strong class="font-s-large"><span class="font-large point-green">6</span> hours</strong>
+                            of listening time with <br>
+                            Active Noise Cancellation enabled.7
+                        </p>
+                    </div>
+                    <div class="desc">
+                        <p class="font-small">
+                            <span>up to</span>
+                            <strong class="font-s-large"><span class="font-large point-green">30</span> hours</strong>
+                            of total listening time with <br>
+                            Active Noise Cancellation enabled,<br>
+                            using the case.8
+                        </p>
+                    </div>
+                </div>
+
+                <div class="img-area">
+                    <img src="./assets/images/battery.jpg" alt>
+
+                    <p class="font-small font-gray">
+                        Recharge the <em class="point-white">MagSafe Charging Case6</em>
+                        with a <em class="point-white"> USB‑C connector, Apple Watch charger,
+                            or MagSafe charger </em>. You can also use a Qi‑certified charger.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="group-battery">
+                <div class="sticky">
+                    <div class="video-area">
+                        <video src="./assets/video/battery.mp4" class="battery-video" muted></video>
+                    </div>
+
+                    <div class="desc-area">
+                        <div class="desc1">
+                            <p class="font-small font-gray">
+                                The <span class="point-green">U1 chip</span> enables <em class="point-white">Find My
+                                    with Precision Finding9</em> for your case, so you can locate it
+                                exactly. You can also use Find My with proximity view if you lose track of your AirPods
+                                Pro.10
+                            </p>
+                        </div>
+
+                        <div class="desc2">
+                            <span class="pin hr">
+                                <span data-move="y-move-plus"></span>
+                            </span>
+
+                            <p class="font-small font-gray">
+                                A <em class="point-white">lanyard loop</em> allows you to attach the case to a backpack
+                                or handbag, so immersive
+                                sound is always within reach.11
+                            </p>
+                        </div>
+
+                        <div class="desc3">
+                            <span class="pin">
+                                <span data-move="y-move-plus"></span>
+                            </span>
+
+                            <p class="font-small font-gray">
+                                The case’s <em class="point-white">built‑in speaker</em> plays sound to help you easily
+                                locate it, and <span class="point-green">alert tones</span>
+                                let you know when the battery is low or pairing is complete.
+                            </p>
+                        </div>
+
+                        <div class="desc4">
+                            <p class="font-small font-gray">
+                                Both AirPods Pro and the MagSafe Charging Case6 are <em class="point-white">
+                                    IP54 dust, sweat, and water
+                                    resistant
+                                </em>.12</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sc-experience">
+            <div class="group-title">
+                <h2 class="font-m-small">Magical experience</h2>
+                <strong class="font-large">
+                    Simplicity on <br> a grand scale.
+                </strong>
+
+                <p class="font-m-small">
+                    From instant setup to Siri commands, AirPods Pro hold all the qualities that make the AirPods family
+                    so magical. And thoughtful features give you the ability to move through more tasks with
+                    unprecedented ease.
+                </p>
+            </div>
+
+            <div class="group-info">
+                <div class="sticky">
+                    <div class="iphone-area">
+                        <div class="phone-bg">
+                            <img src="./assets/images/iphone.jpg" alt>
+                        </div>
+
+                        <div class="phone-img">
+                            <img src="./assets/images/phone-info1.jpg" alt class="phone-img1">
+                            <img src="./assets/images/phone-info2.jpg" alt class="phone-img2">
+                        </div>
+
+                        <div class="airpods">
+                            <img src="./assets/images/experience.png" alt>
+                        </div>
+
+                        <div class="text-box desc1">
+                            <p class="font-small font-gray">
+                                <em class="point-white">Easy, magical setup</em>
+                                Place AirPods Pro near your iPhone and tap Connect to seamlessly pair with every device
+                                in your iCloud account.13 And if your case is custom engraved, the same engraving
+                                appears on your device’s screen — for an even more personal experience.
+                            </p>
+                        </div>
+
+                        <div class="text-box desc2">
+                            <p class="font-small font-gray">
+                                <em class="point-white">Audio Sharing</em>
+                                Easily share a song or show between any two sets of AirPods. Simply bring AirPods near
+                                the iPhone, iPad, or Apple TV you’re listening to and connect instantly.14
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group-list">
+                <div class="list-item">
+                    <img src="./assets/images/icon_siri.png" alt>
+                    <p class="font-small font-gray">
+                        <em class="point-white">Always-on Siri</em>
+                        Play music, make calls, get directions, or check your schedule simply by using your voice. Just
+                        say “Siri” or “Hey Siri”15 to activate your favorite personal assistant and stay on top of
+                        everyday tasks.16
+                    </p>
+                </div>
+
+                <div class="list-item">
+                    <img src="./assets/images/icon_switching.png" alt>
+                    <p class="font-small font-gray">
+                        <em class="point-white">Seamless switching</em>
+                        Automatic Switching is fast and reliable between your iPhone, iPad, and Mac, and easily moves to
+                        your Apple Watch. So if you’re playing music on your Mac, you can answer a call on your iPhone —
+                        without having to switch devices.13
+                    </p>
+                </div>
+
+                <div class="list-item">
+                    <img src="./assets/images/icon_accessibility.png" alt>
+                    <p class="font-small font-gray">
+                        <em class="point-white">AirPods and accessibility</em>
+                        AirPods Pro go beyond the listening experience to assist with select hearing needs. Features
+                        like Conversation Boost bring focus to voices directly in front of you. Headphone Accommodations
+                        amplify frequencies you may need to hear clearly. And if you need to focus on a guest speaker in
+                        a bustling auditorium, Live Listen works with your iPhone to pick up sound at a distance.
+                    </p>
+                </div>
+
+                <div class="list-item">
+                    <img src="./assets/images/icon_notifications.png" alt>
+                    <p class="font-small font-gray">
+                        <em class="point-white">Announce Notifications</em>
+                        Siri can read your important messages or alerts as they arrive — and you can reply to messages
+                        with just your voice.16
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="sc-airpods">
+            <div class="inner">
+                <div class="desc-area">
+                    <img src="./assets/images/icon-ar.png" alt>
+                    <h2 class="font-s-medium">
+                        Use AR to see <br>
+                        AirPods Pro.</h2>
+                    <p class="font-small">Open this page using Safari on your iPhone or iPad.</p>
+                </div>
+
+                <div class="img-area">
+                    <img src="./assets/images/ar.jpg" alt>
+                </div>
+            </div>
+        </section>
+
+        <section class="sc-airpods airpods2">
+            <div class="inner">
+                <div class="desc-area">
+                    <h2 class="font-s-medium">
+                        Say it in a way <br> only you can.</h2>
+                    <p class="font-small">Discover the engraving options for AirPods. Mix emoji, text, and numbers.</p>
+                    <a href="#" class="link font-small point-blue more"><span>Buy AirPods Pro</span></a>
+                </div>
+
+                <div class="img-area">
+                    <img src="./assets/images/engraving.jpg" alt>
+                </div>
+            </div>
+        </section>
+
+        <section class="sc-music">
+            <div class="inner">
+                <div class="desc-area">
+                    <h2>
+                        <svg viewBox="0 0 83 20">
+                            <path
+                                d="M34.752 19.746V6.243h-.088l-5.433 13.503h-2.074L21.711 6.243h-.087v13.503h-2.548V1.399h3.235l5.833 14.621h.1L34.064 1.4h3.248v18.347h-2.56zm16.649 0h-2.586v-2.263h-.062c-.725 1.602-2.061 2.504-4.072 2.504-2.86 0-4.61-1.894-4.61-4.958V6.37h2.698v8.125c0 2.034.95 3.127 2.81 3.127 1.95 0 3.124-1.373 3.124-3.458V6.37H51.4v13.376zm7.394-13.618c3.06 0 5.046 1.73 5.134 4.196h-2.536c-.15-1.296-1.087-2.11-2.598-2.11-1.462 0-2.436.724-2.436 1.793 0 .839.6 1.41 2.023 1.741l2.136.496c2.686.636 3.71 1.704 3.71 3.636 0 2.442-2.236 4.12-5.333 4.12-3.285 0-5.26-1.64-5.509-4.183h2.673c.25 1.398 1.187 2.085 2.836 2.085 1.623 0 2.623-.687 2.623-1.78 0-.865-.487-1.373-1.924-1.704l-2.136-.508c-2.498-.585-3.735-1.806-3.735-3.75 0-2.391 2.049-4.032 5.072-4.032zM66.1 2.836c0-.878.7-1.577 1.561-1.577.862 0 1.55.7 1.55 1.577 0 .864-.688 1.576-1.55 1.576a1.573 1.573 0 0 1-1.56-1.576zm.212 3.534h2.698v13.376h-2.698V6.37zm14.089 4.603c-.275-1.424-1.324-2.556-3.085-2.556-2.086 0-3.46 1.767-3.46 4.64 0 2.938 1.386 4.642 3.485 4.642 1.66 0 2.748-.928 3.06-2.48H83C82.713 18.067 80.477 20 77.317 20c-3.76 0-6.208-2.62-6.208-6.942 0-4.247 2.448-6.93 6.183-6.93 3.385 0 5.446 2.213 5.683 4.845h-2.573zM10.824 3.189c-.698.834-1.805 1.496-2.913 1.398-.145-1.128.41-2.33 1.036-3.065C9.644.662 10.848.05 11.835 0c.121 1.178-.336 2.33-1.01 3.19zm.999 1.619c.624.049 2.425.244 3.578 1.98-.096.074-2.137 1.272-2.113 3.79.024 3.01 2.593 4.012 2.617 4.037-.024.074-.407 1.419-1.344 2.812-.817 1.224-1.657 2.422-3.002 2.447-1.297.024-1.73-.783-3.218-.783-1.489 0-1.97.758-3.194.807-1.297.048-2.28-1.297-3.097-2.52C.368 14.908-.904 10.408.825 7.375c.84-1.516 2.377-2.47 4.034-2.495 1.273-.023 2.45.857 3.218.857.769 0 2.137-1.027 3.746-.93z">
+                            </path>
+                        </svg>
+                        <span class="blind">Apple Music</span>
+                    </h2>
+                    <strong class="font-s-medium">
+                        Get 6 months of Apple Music free with your AirPods Pro.*
+                    </strong>
+                    <a href="#" class="link font-small point-blue"><span>Buy AirPods Pro</span></a>
+                </div>
+
+                <div class="img-area">
+                    <img src="./assets/images/music-airpods.png" alt class="airpods">
+                    <img src="./assets/images/music-album2.jpg" alt class="album-bg">
+                    <img src="./assets/images/music-album1.jpg" alt class="album">
+                </div>
+            </div>
+        </section>
+
+        <section class="sc-compare">
+            <div class="inner">
+                <h2 class="font-l-medium">Which AirPods are <br>
+                    right for you?</h2>
+
+                <div class="group-list">
+                    <div class="list-item">
+                        <div class="item title">
+                            <div class="img-wrap">
+                                <a href="#">
+                                    <img src="./assets/images/airpods-2nd.png" alt class="airpods-2nd">
+                                </a>
+                            </div>
+
+                            <div class="desc-wrap">
+                                <h3 class="font-small">
+                                    AirPods
+                                    <span class="sub-title">
+                                        2nd generation
+                                    </span>
+                                </h3>
+
+                                <span class="price">
+                                    $129
+                                </span>
+
+                                <div class="link-box">
+                                    <a href="#" class="btn-blue">Buy</a>
+                                    <a href="#" class="link point-blue more"><span>Learn more</span></a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <p>—</p>
+                        </div>
+
+                        <div class="item">
+                            <p>—</p>
+                        </div>
+
+                        <div class="item">
+                            <p>—</p>
+                        </div>
+
+                        <div class="item">
+                            <p>—</p>
+                        </div>
+
+                        <div class="item">
+                            <p>—</p>
+                        </div>
+
+                        <div class="item large">
+                            <div class="desc-wrap">
+                                <img src="./assets/images/airpods-case1.png" alt>
+                                <p class="sub-title">Lightning Charging Case</p>
+                            </div>
+                        </div>
+
+                        <div class="item end">
+                            <div class="desc-wrap">
+                                <em>5 hrs</em>
+                                <p class="sub-title">Up to 5 hours of listening time with a single charge ΔΔΔ</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <div class="item title">
+                            <div class="img-wrap">
+                                <a href="#">
+                                    <img src="./assets/images/airpods-3nd.png" alt class="airpods-3nd">
+                                </a>
+                            </div>
+
+                            <div class="desc-wrap">
+                                <h3 class="font-small">
+                                    AirPods
+                                    <span class="sub-title">
+                                        3rd generation
+                                    </span>
+                                </h3>
+
+                                <span class="price">
+                                    From $169
+                                </span>
+
+                                <div class="link-box">
+                                    <a href="#" class="btn-blue">Buy</a>
+                                    <a href="#" class="link point-blue"><span>Learn more</span></a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <p>—</p>
+                        </div>
+
+                        <div class="item">
+                            <p>—</p>
+                        </div>
+
+                        <div class="item">
+                            <p>—</p>
+                        </div>
+
+                        <div class="item">
+                            <div class="desc-wrap">
+                                <img src="./assets/images/airpods-audio.png" alt>
+                                <p class="sub-title">Personalized Spatial Audio with dynamic head tracking</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="desc-wrap">
+                                <img src="./assets/images/airpods-water.png" alt>
+                                <p class="sub-title">Sweat and <br>
+                                    water resistant</p>
+                            </div>
+                        </div>
+
+                        <div class="item large">
+                            <div class="desc-wrap">
+                                <img src="./assets/images/airpods-case2.png" alt>
+                                <p class="sub-title">Lightning Charging Case or MagSafe Charging Case ΔΔ</p>
+                            </div>
+                        </div>
+
+                        <div class="item end">
+                            <div class="desc-wrap">
+                                <em>6 hrs</em>
+                                <p class="sub-title">Up to 6 hours of listening time with a single charge ΔΔΔ</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <div class="item title">
+                            <div class="img-wrap">
+                                <a href="#">
+                                    <img src="./assets/images/airpods-pro.png" alt class="airpods-pro">
+                                </a>
+                            </div>
+
+                            <div class="desc-wrap">
+                                <h3 class="font-small">
+                                    AirPods Pro
+                                    <span class="sub-title">
+                                        2nd generation
+                                    </span>
+                                    <span class="sub-title">
+                                        (USB‑C)
+                                    </span>
+                                </h3>
+
+                                <span class="price">
+                                    $249
+                                </span>
+
+                                <div class="link-box">
+                                    <a href="#" class="btn-blue">Buy</a>
+                                    <a href="#" class="link point-blue"><span>Learn more</span></a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="desc-wrap">
+                                <img src="./assets/images/airpods-audio.png" alt>
+                                <p class="sub-title">Adaptive Audio ◊</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="desc-wrap">
+                                <div class="img-box">
+                                    <img src="./assets/images/airpods-noise-active.png" alt>
+                                    <img src="./assets/images/airpods-noise-active2.png" alt>
+                                </div>
+                                <p class="sub-title">Active Noise
+                                    Cancellation and
+                                    Transparency mode</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="desc-wrap">
+                                <img src="./assets/images/airpods-conversation.png" alt>
+                                <p class="sub-title">Conversation Awareness ◊</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="desc-wrap">
+                                <img src="./assets/images/airpods-audio.png" alt>
+                                <p class="sub-title">Personalized Spatial Audio with dynamic head tracking</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="desc-wrap">
+                                <img src="./assets/images/airpods-water.png" alt>
+                                <p class="sub-title">Dust, sweat, and
+                                    water resistant Δ</p>
+                            </div>
+                        </div>
+
+                        <div class="item large">
+                            <div class="desc-wrap">
+                                <img src="./assets/images/airpods-case3.png" alt>
+                                <p class="sub-title">MagSafe Charging Case (USB‑C) with speaker and lanyard loop ΔΔ</p>
+                            </div>
+                        </div>
+
+                        <div class="item end">
+                            <div class="desc-wrap">
+                                <em>6 hrs</em>
+                                <p class="sub-title">Up to 6 hours of listening time with a single charge ΔΔΔ</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <div class="item title">
+                            <div class="img-wrap">
+                                <a href="#">
+                                    <img src="./assets/images/airpods-max.png" alt class="airpods-max">
+                                </a>
+                            </div>
+
+                            <div class="desc-wrap">
+                                <h3 class="font-small">AirPods Max</h3>
+
+                                <span class="price">
+                                    $549
+                                </span>
+
+                                <div class="link-box">
+                                    <a href="#" class="btn-blue">Buy</a>
+                                    <a href="#" class="link point-blue"><span>Learn more</span></a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <p>—</p>
+                        </div>
+
+                        <div class="item">
+                            <div class="desc-wrap">
+                                <div class="img-box">
+                                    <img src="./assets/images/airpods-noise-active.png" alt>
+                                    <img src="./assets/images/airpods-noise-active2.png" alt>
+                                </div>
+                                <p class="sub-title">Active Noise
+                                    Cancellation and
+                                    Transparency mode</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <p>—</p>
+                        </div>
+
+                        <div class="item">
+                            <div class="desc-wrap">
+                                <img src="./assets/images/airpods-audio.png" alt>
+                                <p class="sub-title">Personalized Spatial Audio with dynamic head tracking</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <p>—</p>
+                        </div>
+
+                        <div class="item large">
+                            <div class="desc-wrap">
+                                <img src="./assets/images/airpods-case4.png" alt>
+                                <p class="sub-title">Smart Case</p>
+                            </div>
+                        </div>
+
+                        <div class="item end">
+                            <div class="desc-wrap">
+                                <em>20 hrs</em>
+                                <p class="sub-title">Up to 20 hours of listening time with a single charge ΔΔΔ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="link font-small point-blue more"><span>Compare all AirPods models</span></a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <h2 class="blind">Apple 푸터</h2>
+        <div class="inner">
+            <section class="sc-buy-info">
+                <h2 class="blind">구매 정보</h2>
+                <div class="item">
+                    <a href="#">
+                        <img src="./assets/images/buy-delivery.svg" alt>
+                        <strong>Fast, free delivery</strong>
+                        <p>Or pick up available items at an Apple Store.</p>
+                        <span class="link point-blue more"><span>Learn More</span></span>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="#">
+                        <img src="./assets/images/buy-pay.svg" alt>
+                        <strong>Pay monthly at 0% APR</strong>
+                        <p>You can pay over time when you choose to check out with Apple Card Monthly Installments.†</p>
+                        <span class="link point-blue more"><span>Learn More</span></span>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="#">
+                        <img src="./assets/images/buy-help.svg" alt>
+                        <strong>Get help buying</strong>
+                        <p>Have a question? Call a Specialist or chat online.</p>
+                        <p>Call 1-800-MY-APPLE.</p>
+                        <span class="link point-blue more"><span>Learn More</span></span>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="#">
+                        <img src="./assets/images/buy-make.svg" alt>
+                        <strong>Make them yours</strong>
+                        <p>Engrave your AirPods with your initials or favorite emoji — free. Only at Apple.</p>
+                        <span class="link point-blue more"><span>Learn More</span></span>
+                    </a>
+                </div>
+            </section>
+
+            <section class="sc-warning">
+                <h2 class="blind">구매전 경고</h2>
+                <ul>
+                    <li>
+                        * New subscribers only. $10.99/month after trial. Offer available for a limited time to new
+                        subscribers who connect an eligible device to an Apple device running iOS 15 or iPadOS 15 or
+                        later. Offer good for 3 months after eligible device pairing. No audio product purchase
+                        necessary for current owners of eligible devices. Plan automatically renews until cancelled.
+                        Restrictions and other <a href="#">terms</a> apply.
+                    </li>
+                </ul>
+                <ol>
+                    <li>Available with Apple Vision Pro (based on country availability) when paired with AirPods Pro
+                        (2nd generation) with MagSafe Charging Case (USB‑C) with the latest firmware.</li>
+                    <li>Works with AirPods Pro (2nd generation) with the latest firmware when paired with a compatible
+                        Apple device running the latest operating system software.</li>
+                    <li>As compared to AirPods Pro (1st generation).</li>
+                    <li>Personalized Spatial Audio will be available for gaming in fall 2024.</li>
+                    <li>Compatible hardware and software required. Works with compatible content in supported apps. Not
+                        all content available in Dolby Atmos. iPhone with TrueDepth camera required to create a personal
+                        profile for Spatial Audio, which will sync across Apple devices running the latest operating
+                        system software, including iOS, iPadOS, macOS, and tvOS.</li>
+                    <li>MagSafe charging requires a compatible MagSafe charger. Wireless charging requires a
+                        Qi‑certified wireless charger. AirPods (3rd generation) charging case also works with the Apple
+                        Watch charger or Lightning connector. AirPods Pro (2nd generation) charging case also works with
+                        the Apple Watch charger or USB‑C connector.</li>
+                    <li>Testing conducted by Apple in August 2023 using preproduction AirPods Pro (2nd generation) with
+                        MagSafe Charging Case (USB‑C) and software paired with preproduction iPhone 15 Pro units and
+                        software. The playlist consisted of 358 unique audio tracks purchased from the iTunes Store
+                        (256-Kbps AAC encoding). Volume was set to 50% and Active Noise Cancellation was enabled. With
+                        Spatial Audio and Head Tracking enabled, listening time was up to 5.5 hours. Testing consisted
+                        of full AirPods Pro battery discharge while playing audio until the first AirPod Pro stopped
+                        playback. Battery life depends on device settings, environment, usage, and many other factors.
+                    </li>
+                    <li>Testing conducted by Apple in August 2023 using preproduction AirPods Pro (2nd generation) with
+                        MagSafe Charging Case (USB-C) and software paired with preproduction iPhone 15 Pro units and
+                        software. The playlist consisted of 358 unique audio tracks purchased from the iTunes Store
+                        (256-Kbps AAC encoding). Volume was set to 50% and Active Noise Cancellation was enabled.
+                        Testing consisted of full AirPods Pro battery discharge while playing audio until the first
+                        AirPod Pro stopped playback. The drained AirPods Pro were charged to 100 percent, then audio
+                        playback was resumed until the first AirPod Pro stopped playback. This cycle was repeated until
+                        both the AirPods Pro and charging case were fully discharged. Battery life depends on device
+                        settings, environment, usage, and many other factors.</li>
+                    <li>Precision Finding requires a U1-equipped iPhone; availability varies by region.</li>
+                    <li>Find My functionality requires iOS 16 or later.</li>
+                    <li>Lanyard sold separately.</li>
+                    <li>AirPods Pro (2nd generation) are dust resistant and sweat and water resistant for non-water
+                        sports and exercise. AirPods Pro (2nd generation) and charging case were tested under controlled
+                        laboratory conditions, and have a rating of IP54 under IEC standard 60529. Dust, sweat, and
+                        water resistance are not permanent conditions and resistance might decrease as a result of
+                        normal wear. Do not attempt to charge wet AirPods Pro (2nd generation); refer to
+                        https://support.apple.com/kb/HT210711 for cleaning and drying instructions.</li>
+                    <li>Requires an iCloud account and a compatible Apple device running the latest operating system
+                        software.</li>
+                    <li>Requires a compatible Apple device running the latest operating system software.</li>
+                    <li>Available in English (Australia, Canada, United Kingdom, U.S.). This feature is not available on
+                        AirPods with the H1 headphone chip and Intel-based Mac computers. Devices must support and have
+                        the latest operating system.</li>
+                    <li>Siri may not be available in all languages or in all areas, and features may vary by area.
+                        Compatible device and internet access required. Cellular data charges may apply.</li>
+                </ol>
+                <ul>
+                    <li>† Apple Card Monthly Installments (ACMI) is a 0% APR payment option that is only available if
+                        you select it at checkout in the U.S. for eligible products purchased at Apple Store locations,
+                        <a href="#">apple.com</a>, the Apple Store app, or by calling 1‑800‑MY‑APPLE, and is subject to
+                        credit approval
+                        and credit limit. See <a href="#">support.apple.com/kb/HT211204</a> for more information about
+                        eligible
+                        products. APR ranges may vary based on when you accepted an Apple Card. Cardholders who accept
+                        an Apple Card on and/or after February 1, 2024: Variable APRs for Apple Card, other than ACMI,
+                        range from 19.24% to 29.49% based on creditworthiness. Rates as of February 1, 2024. Existing
+                        cardholders: See your Customer Agreement for applicable rates and fee. If you buy an ACMI
+                        eligible product by choosing to pay in full with Apple Card (instead of using ACMI), that
+                        purchase is subject to the Apple Card variable APR, not 0% APR. Taxes and shipping on ACMI
+                        purchases are subject to the variable APR, not 0% APR. When you buy an iPhone with ACMI, you’ll
+                        need to select AT&T, T‑Mobile, or Verizon as your carrier when you check out. An iPhone
+                        purchased with ACMI is always unlocked, so you can switch carriers at any time. ACMI is not
+                        available for purchases made online at the following special stores: Apple Employee Purchase
+                        Plan; participating corporate Employee Purchase Programs; Apple at Work for small businesses;
+                        Government, and Veterans and Military Purchase Programs, or on refurbished devices. The last
+                        month’s payment for each product will be the product’s purchase price, less all other payments
+                        at the monthly payment amount. ACMI financing is subject to change at any time for any reason,
+                        including but not limited to, installment term lengths and eligible products. See
+                        <a href="#">support.apple.com/kb/HT211204</a> for information about upcoming changes to ACMI
+                        financing. See the
+                        <a href="#">Apple Card Customer Agreement</a> for more information about ACMI financing.
+                    </li>
+                    <li>◊ Works with AirPods Pro (2nd generation) with the latest firmware when paired with a compatible
+                        Apple device running the latest operating system software.</li>
+                    <li>◊◊ Compatible hardware and software required. Works with compatible content in supported apps.
+                        Not all content available in Dolby Atmos. iPhone with TrueDepth camera required to create a
+                        personal profile for Spatial Audio, which will sync across Apple devices running the latest
+                        operating system software, including iOS, iPadOS, macOS, and tvOS.</li>
+                    <li>◊◊◊ AirPods (3rd generation) are sweat and water resistant for non-water sports and exercise,
+                        and they are IPX4 rated. Sweat and water resistance are not permanent conditions.</li>
+                    <li>Δ AirPods Pro (2nd generation) are dust resistant and sweat and water resistant for non-water
+                        sports and exercise, and they are IP54 rated. Dust, sweat, and water resistance are not
+                        permanent conditions.</li>
+                    <li>ΔΔ MagSafe charging requires a compatible MagSafe charger. Wireless charging requires a
+                        Qi‑certified wireless charger. AirPods (3rd generation) charging case also works with the Apple
+                        Watch charger or Lightning connector. AirPods Pro (2nd generation) charging case also works with
+                        the Apple Watch charger or USB‑C connector.</li>
+                    <li>ΔΔΔ Battery life depends on device settings, environment, usage, and many other factors.</li>
+                    <li>To access and use all the features of Apple Card, you must add Apple Card to Wallet on an iPhone
+                        or iPad with the latest version of iOS or iPadOS. Update to the latest version by going to
+                        Settings > General > Software Update. Tap Download and Install.</li>
+                    <li>Available for qualifying applicants in the United States.</li>
+                    <li>Apple Card is issued by Goldman Sachs Bank USA, Salt Lake City Branch.</li>
+                    <li>If you reside in the U.S. territories, please call Goldman Sachs at 877‑255‑5923 with questions
+                        about Apple Card.</li>
+                </ul>
+            </section>
+
+            <nav class="breadcrumbs">
+                <ul class="list">
+                    <li>
+                        <a href="#">
+                            <img src="./assets/images/apple-logo.svg" alt="apple">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">AirPods</a>
+                    </li>
+                    <li>
+                        <a href="#">AirPods Pro</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="fnb">
+                <div class="fnb-item-wrap">
+                    <div class="fnb-item">
+                        <span class="fnb-title">Shop and Learn</span>
+
+                        <ul class="fnb-list">
+                            <li>
+                                <a href="#">Store</a>
+                            </li>
+                            <li>
+                                <a href="#">Mac</a>
+                            </li>
+                            <li>
+                                <a href="#">iPad</a>
+                            </li>
+                            <li>
+                                <a href="#">iPhone</a>
+                            </li>
+                            <li>
+                                <a href="#">Watch</a>
+                            </li>
+                            <li>
+                                <a href="#">Vision</a>
+                            </li>
+                            <li>
+                                <a href="#">AirPods</a>
+                            </li>
+                            <li>
+                                <a href="#">TV & HOME</a>
+                            </li>
+                            <li>
+                                <a href="#">AirTag</a>
+                            </li>
+                            <li>
+                                <a href="#">Accessories</a>
+                            </li>
+                            <li>
+                                <a href="#">Gift Cards</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="fnb-item">
+                        <span class="fnb-title">Apple Wallet</span>
+
+                        <ul class="fnb-list">
+                            <li>
+                                <a href="#">Wallet</a>
+                            </li>
+                            <li>
+                                <a href="#">Apple Card</a>
+                            </li>
+                            <li>
+                                <a href="#">Apple Pay</a>
+                            </li>
+                            <li>
+                                <a href="#">Apple Cash</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="fnb-item-wrap">
+                    <div class="fnb-item">
+                        <span class="fnb-title">Account</span>
+
+                        <ul class="fnb-list">
+                            <li>
+                                <a href="#">Manage Your Apple ID</a>
+                            </li>
+                            <li>
+                                <a href="#">Apple Store Account</a>
+                            </li>
+                            <li>
+                                <a href="#">iCloud.com</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="fnb-item">
+                        <span class="fnb-title">Entertainment</span>
+
+                        <ul class="fnb-list">
+                            <li>
+                                <a href="#">Apple One</a>
+                            </li>
+                            <li>
+                                <a href="#">Apple TV+</a>
+                            </li>
+                            <li>
+                                <a href="#">Apple Music</a>
+                            </li>
+                            <li>
+                                <a href="#">Apple Arcade</a>
+                            </li>
+                            <li>
+                                <a href="#">Apple Fitness+</a>
+                            </li>
+                            <li>
+                                <a href="#">Apple News+</a>
+                            </li>
+                            <li>
+                                <a href="#">Apple Podcasts</a>
+                            </li>
+                            <li>
+                                <a href="#">Apple Books</a>
+                            </li>
+                            <li>
+                                <a href="#">App Store</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="fnb-item-wrap">
+                    <div class="fnb-item">
+                        <span class="fnb-title">Apple Store</span>
+
+                        <ul class="fnb-list">
+                            <li>
+                                <a href="#">Find a Store</a>
+                            </li>
+                            <li>
+                                <a href="#">Genius Bar</a>
+                            </li>
+                            <li>
+                                <a href="#">Today at Apple</a>
+                            </li>
+                            <li>
+                                <a href="#">Group Reservations</a>
+                            </li>
+                            <li>
+                                <a href="#">Apple Camp</a>
+                            </li>
+                            <li>
+                                <a href="#">Apple Store App</a>
+                            </li>
+                            <li>
+                                <a href="#">Certified Refurbished</a>
+                            </li>
+                            <li>
+                                <a href="#">Apple Trade In</a>
+                            </li>
+                            <li>
+                                <a href="#">Financing</a>
+                            </li>
+                            <li>
+                                <a href="#">Carrier Deals at Apple</a>
+                            </li>
+                            <li>
+                                <a href="#">Order Status</a>
+                            </li>
+                            <li>
+                                <a href="#">Shopping Help</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="fnb-item-wrap">
+                    <div class="fnb-item">
+                        <span class="fnb-title">For Business</span>
+
+                        <ul class="fnb-list">
+                            <li>
+                                <a href="#">Apple and Business</a>
+                            </li>
+                            <li>
+                                <a href="#">Shop for Business</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="fnb-item">
+                        <span class="fnb-title">For Education</span>
+
+                        <ul class="fnb-list">
+                            <li>
+                                <a href="#">Apple and Education</a>
+                            </li>
+                            <li>
+                                <a href="#">Shop for K-12</a>
+                            </li>
+                            <li>
+                                <a href="#">Shop for College</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="fnb-item">
+                        <span class="fnb-title">For Healthcare</span>
+
+                        <ul class="fnb-list">
+                            <li>
+                                <a href="#">Apple in Healthcare</a>
+                            </li>
+                            <li>
+                                <a href="#">Mac in Healthcare</a>
+                            </li>
+                            <li>
+                                <a href="#">Health on Apple Watch</a>
+                            </li>
+                            <li>
+                                <a href="#">Health Records on iPhone and iPad</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="fnb-item">
+                        <span class="fnb-title">For Government</span>
+
+                        <ul class="fnb-list">
+                            <li>
+                                <a href="#">Shop for Government</a>
+                            </li>
+                            <li>
+                                <a href="#">Shop for Veterans and Military</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="fnb-item-wrap">
+                    <div class="fnb-item">
+                        <span class="fnb-title">Apple Values</span>
+
+                        <ul class="fnb-list">
+                            <li>
+                                <a href="#">Accessibility</a>
+                            </li>
+                            <li>
+                                <a href="#">Education</a>
+                            </li>
+                            <li>
+                                <a href="#">Environment</a>
+                            </li>
+                            <li>
+                                <a href="#">Inclusion and Diversity</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy</a>
+                            </li>
+                            <li>
+                                <a href="#">Racial Equity and Justice</a>
+                            </li>
+                            <li>
+                                <a href="#">Supply Chain</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="fnb-item">
+                        <span class="fnb-title">About Apple</span>
+
+                        <ul class="fnb-list">
+                            <li>
+                                <a href="#">Newsroom</a>
+                            </li>
+                            <li>
+                                <a href="#">Apple Leadership</a>
+                            </li>
+                            <li>
+                                <a href="#">Career Opportunities</a>
+                            </li>
+                            <li>
+                                <a href="#">Investors</a>
+                            </li>
+                            <li>
+                                <a href="#">Ethics & Compliance</a>
+                            </li>
+                            <li>
+                                <a href="#">Events</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact Apple</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="group-info">
+                <div class="shop-area">
+                    <p>
+                        More ways to shop: <a href="#" class="point-blue">Find an Apple Store</a> or
+                        <a href="#" class="point-blue">other retailer</a> near you. Or call 1-800-MY-APPLE.
+                    </p>
+                </div>
+
+                <div class="info-area">
+                    <div class="col-left">
+                        <small>Copyright © 2024 Apple Inc. All rights reserved. </small>
+                        <ul class="legal-link">
+                            <li>
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms of Use</a>
+                            </li>
+                            <li>
+                                <a href="#">Sales and Refunds</a>
+                            </li>
+                            <li>
+                                <a href="#">Legal</a>
+                            </li>
+                            <li>
+                                <a href="#"> Site Map</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-right">
+                        <a href="#" class="area">United States</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
